@@ -1,0 +1,14 @@
+[package]
+name = "no_spam"
+version = "0.1.0"
+authors = ["Lattice 0"]
+edition = "2018"
+
+[features]
+default = []
+random = ["rand"]
+# Always calls the function when on debug mode
+ignore_on_debug =[]
+
+[dependencies]
+rand = { version = "0.8", optional = true }
